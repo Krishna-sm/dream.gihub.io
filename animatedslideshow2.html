@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated slideshow 2</title>
+    <style>
+        .container1
+        {
+                width: 100%;
+                height: auto;
+                position: absolute;
+        }
+        div img {
+            width: 99%;
+            height: 600px;
+        }
+        *
+        {
+            box-sizing: border-box;
+        }
+        
+    
+        @keyframes dots
+        {
+           25%{ display: block;}
+           50%{ display: none;}
+           75%{ display: none;}
+           100%{ display: none;}
+        }
+        #d1
+        {
+            animation-name: dots;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes dots1
+        {
+            25%{ display: none;}
+           50%{ display: block;}
+           75%{ display: none;}
+           100%{ display: none;}
+        }
+        #d2
+        {
+            animation-name: dots1;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes dots2
+        {
+            25%{ display: none;}
+           50%{ display: none;}
+           75%{ display:block;}
+           100%{ display: none;}
+        }
+        #d3
+        {
+            animation-name: dots2;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes dots3
+        {
+            25%{ display: none;}
+           50%{ display: none;}
+           75%{ display:none;}
+           100%{ display:block;}
+        }
+        #d3
+        {
+            animation-name: dots3;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="slide show" >
+
+        
+           <div class="container1" id="d1" ><a href="nature/1.jpg" target="_blank"><img src="nature/1.jpg" ></a></div>
+           <div class="container1" id="d2" ><a href="nature/2.jpg" target="_blank"><img src="nature/2.jpg"></a></div>
+           <div class="container1" id="d3" ><a href="nature/3.jpg" target="_blank"><img src="nature/3.jpg"></a></div>
+           <div class="container1" id="d4" ><a href="nature/4.jpg" target="_blank"><img src="nature/4.jpg"></a></div>
+    </div>
+</body>
+</html>

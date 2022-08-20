@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myself</title>
+    <style>
+        /* css starts for nav baar */
+           .link
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+            
+        .container
+        {
+            display: inline-block;
+            margin: 0px 0px 0px 0px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            text-align: left;
+        }
+        .ham
+        {
+            border: 2px solid white;
+            border-radius: 5px;
+            display: block;
+            margin-top: 4px;
+            width: 25px;
+            
+        }
+        .container:hover
+        {
+            background-color: rgb(0, 0, 0);
+            
+        }
+        .hamb:hover
+        {
+            background-color: rgb(0, 0, 0);
+            
+            
+        }
+        .link:hover{
+            color: gray;
+        }
+        .link:active
+        {
+            color:rgb(240, 116, 116);
+        }
+  
+        *
+        {
+            box-sizing: border-box;
+        }
+        .hamb
+        {
+                position: relative;
+                left: 15px;
+                bottom: -7px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                margin-top: 0px;
+        }
+        #nav
+        {
+            position:relative;
+            display: inline-block;
+            margin-top: 0px;
+        }
+       
+        .hamb:hover
+        {
+           color:gray;  
+        }
+        body{
+         
+         background-color: rgba(9, 25, 61, 0.952);
+         color: rgb(245, 245, 245);
+        }
+        /* css ends  for nav baar */
+
+
+        /* css starts for profile image */
+       div.dpimage
+       {
+            position: relative;
+            top: 10px;
+            margin-left: 580px;
+           
+           
+       }
+
+       .dp
+       {
+            width:200px;
+            height:300px;  
+            border-radius: 10%;
+            border-bottom: 5px solid rgb(177, 174, 174);
+            border-right: 5px solid rgb(177, 174, 174);
+       }
+       @media only screen and (max-width: 600px) 
+       {
+        div.dpimage
+       {
+            position: relative;
+            top: 10px;
+            margin-left: 25%;
+        }
+       .dp
+       {
+            width: 200px;
+            height: 300px;  
+            border-radius: 10%;
+       } 
+       }
+
+        /* css ends for profile image */
+
+
+
+        /* css starts for introduction */
+        .intro
+        {
+            text-align: center;
+            font-size: 22px;
+            background-color: rgb(30, 30, 85);
+            border-top: 2px solid whitesmoke;
+            border-bottom: 2px solid whitesmoke;
+        }
+
+        /* css ends for introduction */
+
+        /* css starts for educational details */
+
+    
+       
+        @keyframes example
+        {
+           0%{ background-image: url("c.png"); 
+                }
+           50%{ background-image: url("cpp.png");}
+           100%{ background-image: url("javascript.png");}
+
+        }
+        div.main{
+            width: 500px;
+            height: 500px;
+            margin-left: 65vh;
+            background-size: cover;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            background-size: cover;
+        }
+
+        .main
+        {
+            display: block;
+           
+            border-top: none;
+            border-left: none;
+            border-radius: 15px;
+            border-bottom: 6px solid gray;
+            border-right: 6px solid gray;
+            border-style: double;
+            box-shadow: 2px black;
+            background-size: cover;
+        }
+      .container1
+      {
+        height: 99%;
+        width: 99%;
+        margin: 5px;
+        display: inline-block;
+        border-radius: 10px;
+        padding :5px;
+        font-size: 18px;
+         }
+         .container1:hover
+         {
+                background-color: rgb(5, 5, 5);
+                color: red;
+             
+         }
+      .dots
+      {
+        position: relative;
+        top: 5px;
+        left: 7vh;
+      }
+      @media only screen and (max-width: 600px){
+        .dots{
+                position: relative;
+                top: 5px;
+                left: 0px;
+        }
+        
+      }
+      @keyframes dots
+        {
+           20%{ background-color:rgb(65, 59, 59); color: rgb(255, 0, 0)}
+           50%{ background-color: rgb(214, 208, 208); }
+           100%{ background-color:rgb(214, 208, 208); }
+        }
+        #d1
+        {
+            animation-name: dots;
+            
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+         
+        }
+        
+        @keyframes dots1
+        {
+           0%{ background-color:  rgb(214, 208, 208);}
+           50%{ background-color:rgb(65, 59, 59) ;color: rgb(255, 0, 0);}
+           100%{ background-color:rgb(214, 208, 208) ;}
+        }
+        #d2
+        {
+            animation-name: dots1;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes dots2
+        {
+           0%{ background-color:  rgb(214, 208, 208);}
+           50%{ background-color: rgb(214, 208, 208);}
+           100%{ background-color:rgb(66, 59, 59); color: rgb(255, 0, 0);}
+        }
+        #d3
+        {
+            animation-name: dots2;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+        @media only screen and (max-width: 600px)
+        {
+            div.main{
+                width:90%;
+                height: 400px;
+                margin-left: 5vh;
+                background-size: cover;
+            }
+ 
+        }
+
+        /* css ends  for educational details */
+
+        /* connect with us */
+        
+            div.connect h1{
+                text-align: center;
+            }
+            div.connect a img{
+                margin-left: 550px;
+            }
+            @media only screen and (max-width: 600px) {
+                div.connect h1{
+                text-align: center;
+            }
+            div.connect a img{
+                margin-left: 125px;
+            }
+                
+            }
+            @media only screen and (min-width: 600px) {
+                .list
+                {
+                    margin-left: 470px;
+                }
+            }
+    </style>
+
+</head>
+<body>
+    <!-- here html starts for nav baar -->
+    <nav>
+        <div style=" background-color: rgb(58, 52, 52); width: 100%; height: 70px;" id="home">
+ 
+            <div  class="hamb" >       
+                <div class="ham" style="height: 0px;"></div>
+                <div class="ham" style="height: 0px;"></div>
+                <div class="ham" style="height: 0px;"></div>
+            </div>
+            <div id="nav">
+                <ul style="list-style-type: none; display: inline-block;" >
+                        <div class="container" id="1">
+                            <li >
+                                <a href="index.html"  class="link" > Home</a>
+                            </li>
+                        </div >
+                        <div id="2" class="container">      
+                            <li>
+                                <a href="" class="link" > Contact</a>
+                            </li>
+                        </div >
+                        <div  id="3" class="container">
+                            <li>
+                                <a href="myself.html" class="link"  >About Us </a>
+                            </li>
+                        </div>
+                </ul>
+            </div>
+             
+        </div>
+    </nav>
+
+    <!-- here html ends for nav baar -->
+
+
+    <!-- html starts for display image-->
+   
+    <div class="dpimage">
+        <a href="WhatsApp Image 2022-08-11 at 9.25.36 AM.jpeg" target="_blank" class="dpa"><img src="WhatsApp Image 2022-08-11 at 9.25.36 AM.jpeg" class="dp"> </a>
+       <p style="font-size: 22px ;margin-left: 15px;" ><b><i><u> Mr. Piyush sharma </u></i></b></p>
+</div>
+<!-- html ends for display picture-->
+
+<div class="intro" >
+    <p>Hellp! guys. This is Piyush Sharma creator of this website. first of all thanks for visiting my page.</p>
+    <p>
+        I am student of Rajiv Academy for technology and management (Mathura ). I am pursuing B.C.A (Bachelor of computer applications). 
+    </p>
+   
+    
+
+    </div>
+<!--Educational details -->
+<div style="letter-spacing: 1px; font-size: 18px;  " class="list">
+    <p style="margin-left: 10px;"> Here some languages that I have learn't yet.</p>
+    <ul type="cirle">
+        <li>
+            C programming language.
+        </li>
+        <li>
+            C++ with OOP's concepts.
+        </li>
+        <li>
+            Javascript 
+        </li>
+        </ul>
+        </div>
+
+
+      <!--animated slide show-->
+      <div  class="main" style="display: inline-block;" >
+    
+    </div>
+    <br>
+   
+    <div style=" display: inline-block; text-align: center; " class="dots">
+        <div class="container1" id="d1" > C is my first programming language. </div>
+        <div class="container1" id="d2" > Cpp is different from C because it is  based OOP's concepts.</div>
+        <div class="container1" id="d3" >Javascript create web pages interactive and help's to look smart.</div>
+       
+        
+        </div>
+       
+      <!--animated slide show ends -->
+      
+      <br>
+      <hr>
+      <div style="display: inline;" class="connect"  >
+      
+        
+        <h1  style="margin-left: 5vh;" > Connect with us ~
+        </h1>
+        <a href="" target="_blank" class="">
+        <img src="instagram.png.jpg" height="35px" width="35px"  title="click on this image to visit my instagram page" style="display: inline-block;  border-radius: 5px; position: relative;
+         left: 5vh;"></a>
+         <a href="" target="_blank">
+            <img src="whatsapp.jpg" height="35px" width="35px"  title="click on this image to connect with me on whatsapp.." style="display: inline-block;  border-radius: 5px; margin-left: 7vh;
+            ">
+         </a>
+         <a href="" target="_blank">
+            <img src="twiter.png.jpg" height="35px" width="35px"  title="Please follow me on twiter" style="display: inline-block;  border-radius: 5px;margin-left: 2vh;
+            "></a>
+    </div>
+   
+      
+      <hr>
+<div style="background: gray ; padding-top: 1px;  padding-bottom: 1px; font-size: large; ">
+    <p style="text-align: center;">
+        <a href="" target="_blank" style=" text-decoration: none; color: aliceblue;"> @copyright policy</a>
+    </p>
+    <p style="text-align: center; padding-top: 0px; "> Thanks for visiting.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Images </title>
+    <link rel="icon" type="image/x-icon" href="nature9.jpg"> 
+    <style>
+        /* css starts for nav baar */
+        .link
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+            
+        .container
+        {
+            display: inline-block;
+            margin: 0px 0px 0px 0px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            text-align: left;
+        }
+        .ham
+        {
+            border: 2px solid white;
+            border-radius: 5px;
+            display: block;
+            margin-top: 4px;
+            width: 25px;
+            
+        }
+        .container:hover
+        {
+            background-color: rgb(0, 0, 0);
+            
+        }
+        .hamb:hover
+        {
+            background-color: rgb(0, 0, 0);
+            
+            
+        }
+        .link:hover{
+            color: gray;
+        }
+        .link:active
+        {
+            color:rgb(240, 116, 116);
+        }
+  
+        *
+        {
+            box-sizing: border-box;
+        }
+        .hamb
+        {
+                position: relative;
+                left: 15px;
+                bottom: -7px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                margin-top: 0px;
+        }
+        #nav
+        {
+            position:relative;
+            display: inline-block;
+            margin-top: 0px;
+        }
+       
+        .hamb:hover
+        {
+           color:gray;  
+        }
+        /*  css ends for nav baar */
+
+
+        /* these lines are written for slideshow */
+        @keyframes example
+        {
+           25%{ background-image: url("nature/1.jpg"); 
+                }
+           50%{ background-image: url("nature/4.jpg");}
+           100%{ background-image: url("nature/3.jpg");}
+
+
+        }
+        div.main{
+            width: 100%;
+            height: 620px;
+            
+            background-size: cover;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            position: relative;
+            top: 5px;
+            
+        }
+        @media only screen and (max-width:600px)
+        {
+                div.main
+                {
+                    height: 500px;
+                }
+        }
+       
+      .container1
+      {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(231, 224, 224);
+        display: inline-block;
+        border-radius: 100%;
+        margin-left: 5px;
+        }
+      .dots
+      {
+        position: relative;
+        top: 20px;
+      }
+      @keyframes dots
+        {
+           25%{ background-color: rgb(68, 60, 60);}
+           50%{ background-color: rgb(214, 208, 208); }
+           100%{ background-color:rgb(214, 208, 208); }
+        }
+        #d1
+        {
+            animation-name: dots;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        @keyframes dots1
+        {
+           25%{ background-color:  rgb(214, 208, 208);}
+           50%{ background-color:rgb(65, 59, 59) ;}
+           100%{ background-color:rgb(214, 208, 208) ;}
+        }
+        #d2
+        {
+            animation-name: dots1;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes dots2
+        {
+           0%{ background-color:  rgb(214, 208, 208);}
+           50%{ background-color: rgb(214, 208, 208);}
+           100%{ background-color:rgb(66, 59, 59); }
+        }
+        #d3
+        {
+            animation-name: dots2;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+
+
+        /* here slideshow ends */
+        div a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* these lines of css are written for images */
+        .images
+        {
+            width: 30%;
+            height: 600px;
+            display: inline-block;
+            margin-left: 2%;
+            margin-top: 5px;
+            box-shadow: 5px black;
+        }
+        
+        div.images a img
+        {
+             width: 100%;
+            height: 500px;
+             border-radius: 10px;
+             scale: 1;
+             transition: 1s;
+            box-shadow: 5px 7px gray;
+        }
+        div.images a img:hover{
+            scale: 1.1;
+            box-shadow: 8px 8px 8px 8px rgb(82, 78, 78);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .images{ display: block; width: 100%; margin-left: 1px; }
+            div.images a img{ width: 100%; scale: 0.9;transition: 1s;}
+            div.images a img:hover{ scale: 1;}
+        }
+        body{
+            background-color: rgb(103, 103, 136);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div.connect h1{
+                text-align: center;
+            }
+            div.connect a img{
+                margin-left: 550px;
+            }
+            @media only screen and (max-width: 600px) {
+                div.connect h1{
+                text-align: center;
+            }
+            div.connect a img{
+                margin-left: 125px;
+            }
+        }
+        </style>
+</head> 
+<body>
+    <nav>
+        <div style=" background-color: rgb(58, 52, 52); width: 100%; height: 70px;" id="home">
+ 
+            <div  class="hamb" onclick="show()">       
+            <div class="ham" style="height: 0px;"></div>
+            <div class="ham" style="height: 0px;"></div>
+            <div class="ham" style="height: 0px;"></div>
+            </div>
+            <div id="nav">
+            <ul style="list-style-type: none; display: inline-block;" >
+               <div class="container" id="1">
+                <li >
+                    <a href="Complete web page.html"  class="link" > Home</a>
+                </li>
+                </div >
+                <div id="2" class="container">      
+                 <li>
+                    <a href="contactform.html" class="link" > Contact</a>
+                </li>
+                </div >
+                <div  id="3" class="container">
+                
+                <li>
+                    <a href="myself.html" class="link"  >About Us </a>
+                </li>
+                </div>
+            </ul>
+            </div>
+             
+            </div>
+</nav>
+    
+<!-- these lines are written for slide show -->
+<div class="slide show" >
+<div  class="main"  >
+    
+</div>
+<br>
+<div style="text-align: center; display: block;" class="dots">
+   <div class="container1" id="d1" ></div>
+   <div class="container1" id="d2" ></div>
+   <div class="container1" id="d3" ></div>
+
+   
+    
+    </div>
+</div>
+
+<!-- here slideshow ends -->
+
+<!-- here starts web page -->
+
+<div style="text-align: center; position: relative ; top: 15px; font-size: 22px; background-color: rgb(164, 202, 189); border-radius: 5px;" >
+    <p> Welcome to my web page</p>
+    <span> Hello! guys this is software er.<a href="myself.html" > Piyush sharma.</a> Creator of this web page. </span>
+    <strong> This Web page is Collection of Nature Images </strong>
+    <h1 style="text-align: center;"> Top 20 Nature Images  </h1>
+    <p> Click on images to open in full window</p>
+</div>
+
+
+<!--these lines are written for images -->
+<div class="images">
+    <a href="nature\1.jpg" target="_blank">
+        <img src="nature\1.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\2.jpg" target="_blank">
+        <img src="nature\2.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\3.jpg" target="_blank">
+        <img src="nature\3.jpg">
+    </a>
+
+</div>
+<div class="images" style="margin-top: 5px;">
+    <a href="nature\4.jpg" target="_blank">
+        <img src="nature\4.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\5.jpg" target="_blank">
+        <img src="nature\5.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\6.jpg" target="_blank">
+        <img src="nature\6.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\7.jpg" target="_blank">
+        <img src="nature\7.jpg">
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\8.jpg" target="_blank">
+        <img src="nature\8.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\9.jpg" target="_blank">
+        <img src="nature\9.jpg">
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\10.jpg" target="_blank">
+        <img src="nature\10.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\11.jpg" target="_blank">
+        <img src="nature\11.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\12.jpg" target="_blank">
+        <img src="nature\12.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\13.jpg" target="_blank">
+        <img src="nature\13.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\14.jpg" target="_blank">
+        <img src="nature\14.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\15.jpg" target="_blank">
+        <img src="nature\15.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\16.jpg" target="_blank">
+        <img src="nature\16.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\17.jpg" target="_blank">
+        <img src="nature\17.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\18.jpg" target="_blank">
+        <img src="nature\18.jpg">
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\19.jpg" target="_blank">
+        <img src="nature\19.jpg" >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\20.jpg" target="_blank">
+        <img src="nature\20.jpg"  >
+    </a>
+
+</div>
+<div class="images">
+    <a href="nature\11.jpg" target="_blank">
+        <img src="nature\11.jpg"  >
+    </a>
+
+</div>
+<hr>
+<div class="footer" style="background-color:rgb(117, 103, 103) ;border-bottom: 2px solid white;  text-align: center; font-size: 22px; color:aliceblue; padding-top: 5px;padding-bottom: 3px;" >
+  <p>This Website is a Collection of Nature Images.</p>
+  <p> All images captures by Mr. Shivam Verma</p>
+  <p> <a href=" contactform.html" style="text-decoration: none; color: aliceblue;" >Please send your feedback: Contact Us </a></p>
+</div>
+ <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <h1 style="color: aliceblue; text-align: center;"> Thanks for Visiting</h1>
+ </div>
+<!--these lines are written for images -->
+<div style="display: inline; color: aliceblue;" class="connect"  >
+      
+        
+    <h1  style="margin-left: 5vh; color: aliceblue;" > Follow us on Social Media :-
+    </h1>
+    <a href="" target="_blank" class="">
+    <img src="instagram.png.jpg" height="35px" width="35px"  title="click on this image to visit my instagram page" style="display: inline-block;  border-radius: 5px; position: relative;
+     left: 5vh;"></a>
+     <a href="" target="_blank">
+        <img src="whatsapp.jpg" height="35px" width="35px"  title="click on this image to connect with me on whatsapp.." style="display: inline-block;  border-radius: 5px; margin-left: 7vh;
+        ">
+     </a>
+     <a href="" target="_blank">
+        <img src="twiter.png.jpg" height="35px" width="35px"  title="Please follow me on twiter" style="display: inline-block;  border-radius: 5px;margin-left: 2vh;
+        "></a>
+</div>
+
+<!-- this script is written for nav baar-->
+    <script>
+              
+        var a=0;
+          function show()
+                {
+ 
+                if (a==0)
+                    {
+                    a++;
+                    var element=document.getElementById("nav");
+                    element.style.display="none";        
+                        }
+                else
+                    {
+                a=0;
+                var element=document.getElementById("nav");
+                    element.style.display="inline-block";
+                }
+            }
+       
+    </script>
+</body>
+</html>
